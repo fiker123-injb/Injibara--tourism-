@@ -5,66 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Injibara Smart Tourism Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .navbar-brand { font-weight: bold; color: #ffc107 !important; }
+        footer { background-color: #212529; color: white; padding: 20px 0; }
+    </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Injibara Tourism</a>
+            <a class="navbar-brand" href="index.html">Injibara Tourism</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+    <div id="injibaraSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1200x500?text=Welcome+to+Injibara" class="d-block w-100" alt="Injibara">
+                <img src="view1.jpeg" class="d-block w-100" alt="Injibara View 1">
                 <div class="carousel-caption">
-                    <h1>Explore the Green City</h1>
-                    <p>Discover the beauty and culture of Awi zone.</p>
+                    <h3>Welcome to Injibara</h3>
+                    <p>Experience the fresh air and green landscape.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x500?text=Agew+Horsemen" class="d-block w-100" alt="Culture">
+                <img src="view2.jpeg" class="d-block w-100" alt="Injibara View 2">
                 <div class="carousel-caption">
-                    <h1>Agew Horsemen Tradition</h1>
-                    <p>Witness the legendary equestrian skills.</p>
+                    <h3>Beautiful Landscapes</h3>
+                    <p>Discover the hidden gems of Awi Zone.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="view3.jpeg" class="d-block w-100" alt="Injibara View 3">
+                <div class="carousel-caption">
+                    <h3>The Green City</h3>
+                    <p>A perfect destination for nature lovers.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#injibaraSlider" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#injibaraSlider" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
 
     <div class="container my-5">
-        <h2 class="text-center mb-4">Welcome to Injibara City</h2>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
-                <p>Injibara is a town in Ethiopia, the administrative center of the Awi Zone in the Amhara Region. It is known for its beautiful landscape and hospitable people.</p>
+                <h2 class="fw-bold">Rich Culture & Tradition</h2>
+                <p class="lead">Injibara is famous for its unique Agew culture. The Agew horsemen are a symbol of bravery and history in the region. Visitors can experience traditional dances, clothing, and hospitality.</p>
+                <a href="#" class="btn btn-outline-success">Learn More</a>
             </div>
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/500x300" class="img-fluid rounded" alt="About Injibara">
+                <img src="culture.jpeg" class="img-fluid rounded shadow-lg" alt="Injibara Culture">
             </div>
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p>&copy; 2026 Injibara Tourism Guide | Designed by Group 1</p>
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Injibara Tourism | Group 1 Project</p>
+            <p>Injibara University - IT Department</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
